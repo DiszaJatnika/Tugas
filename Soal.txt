@@ -1,0 +1,24 @@
+
+
+Buat pages dan fungsi sebagai berikut:
+
+Login
+Form fields: email & password 
+
+Dashboard 1: administrator
+Text: Hallo admin {email}
+link: Logout
+
+Dashboard 2: client
+Text: Hallo user {email}
+link: logout
+
+Email admin: email@admin.com
+Pass admin: iniAdminA7A
+
+Email user: email@user.com
+Pass user: iniUserA7A
+
+Alurnya, jika seseorang login menggunakan email dan password admin, otomatis redirect ke Dashboard 1, dan jika login menggunakan email dan password user maka redirect ke dashboard 2. Jika mereka klik Logout maka clear session.
+
+Public tidak bisa akses dashboard 1 dan dashboard 2 tanpa login terlebih dahulu. Admin bisa mengakses dashboard 2, tapi user tidak bisa mengakses dashboard 1.

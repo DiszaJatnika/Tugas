@@ -1,0 +1,87 @@
+CRITICAL - 2022-06-28 00:05:24 --> Invalid file: auth/login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/login.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('auth/login', [], true)
+ 3 APPPATH\Controllers\Auth.php(24): view('auth/login')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-28 00:07:44 --> Undefined index: username
+in APPPATH\Controllers\Auth.php on line 77.
+ 1 APPPATH\Controllers\Auth.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'APPPATH\\Controllers\\Auth.php', 77, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-28 00:08:51 --> Undefined index: username
+in APPPATH\Controllers\Auth.php on line 77.
+ 1 APPPATH\Controllers\Auth.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: username', 'APPPATH\\Controllers\\Auth.php', 77, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-28 00:49:27 --> Incorrect column name 'role   '
+ERROR - 2022-06-28 00:50:18 --> Incorrect column name 'role   '
+ERROR - 2022-06-28 00:51:38 --> Unknown table 'lks.user'
+ERROR - 2022-06-28 00:52:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,2) NOT NULL DEFAULT 2,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CH...' at line 6
+ERROR - 2022-06-28 00:52:29 --> Unknown table 'lks.user'
+ERROR - 2022-06-28 00:52:29 --> Incorrect column name 'role   '
+ERROR - 2022-06-28 00:53:02 --> Unknown table 'lks.user'
+ERROR - 2022-06-28 00:53:02 --> Incorrect column name 'role   '
+ERROR - 2022-06-28 00:53:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1,2) NOT NULL DEFAULT 2,
+	CONSTRAINT `pk_user` PRIMARY KEY(`id`)
+) DEFAULT CH...' at line 6
+ERROR - 2022-06-28 00:59:16 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 00:59:16 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 01:00:02 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 01:00:02 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 01:00:39 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 01:00:39 --> Unknown column 'username' in 'field list'
+ERROR - 2022-06-28 01:01:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+ERROR - 2022-06-28 01:02:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1
+ERROR - 2022-06-28 01:03:40 --> Table 'lks.user' doesn't exist
+CRITICAL - 2022-06-28 01:03:40 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Auth.php(85): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-28 01:03:48 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-06-28 01:03:48 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Auth.php(85): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-28 01:04:01 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-06-28 01:04:01 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Auth.php(85): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-06-28 01:07:07 --> Table 'tugas.user' doesn't exist
+CRITICAL - 2022-06-28 01:07:07 --> Call to a member function getFirstRow() on bool
+in SYSTEMPATH\Model.php on line 249.
+ 1 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 2 APPPATH\Controllers\Auth.php(85): CodeIgniter\BaseModel->first()
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Auth->valid_login()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
